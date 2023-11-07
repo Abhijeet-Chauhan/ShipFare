@@ -19,7 +19,7 @@ rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
 rel="stylesheet"
 />
-
+<link rel="stylesheet" href="css/mdb.dark.min.css" />
 
 
 <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/dark-5d486a4ede8e.css" />
@@ -76,7 +76,7 @@ rel="stylesheet"
             <li class="nav-item">
               <a
                  class="nav-link"
-                 href=""
+                 href="./aboutus.html"
                  target="_blank"
                  >More!</a
                 >
@@ -153,7 +153,7 @@ rel="stylesheet"
           <div>
             <h1 class="mb-3 display-1" style="font-size: 75px;">SHIPFARE</h1>
             <a
-            class="btn btn-outline-light btn-lg m-2 mb-3"
+            class="btn btn-outline-light btn-lg m-2 mb-3" data-mdb-toggle="modal" data-mdb-target="#predictModal"
             href=""
             role="button"
             rel="nofollow"
@@ -162,7 +162,7 @@ rel="stylesheet"
           >
           <a
             class="btn btn-outline-light btn-lg m-2 mb-3"
-            href=""
+            href="./aboutus.html"
             target="_blank"
             role="button"
           >Know More!</a
@@ -177,7 +177,76 @@ rel="stylesheet"
     <!-- Background image -->
 </header>
   <!--Main Navigation-->
-  
+  <!-- Modal -->
+<div class="modal fade" id="predictModal" tabindex="-1" aria-labelledby="predictModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="font-size: 20px;">Enter Data</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <!-- 2 column grid layout with text inputs for the first and last names -->
+          
+        
+          <!-- Text input -->
+          <div class="form-outline mb-4">
+            <input type="number" id="form6Example3" class="form-control" />
+            <label class="form-label" for="form6Example3">Height</label>
+          </div>
+        
+          <!-- Text input -->
+          <div class="form-outline mb-4">
+            <input type="number" id="form6Example4" class="form-control" />
+            <label class="form-label" for="form6Example4">Width</label>
+          </div>
+          
+          <!-- Number input -->
+          <div class="form-outline mb-4">
+            <input type="number" id="form6Example6" class="form-control" />
+            <label class="form-label" for="form6Example6">Weight</label>
+          </div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form6Example5" style="font-size: 15px;">Fragility</label><br>
+            <div class="btn-group">
+              <input type="radio" class="btn-check" name="Fragility" id="low" autocomplete="off"  />
+              <label class="btn btn-secondary" for="low">Low</label>
+            
+              <input type="radio" class="btn-check" name="Fragility" id="normal" autocomplete="off" checked/>
+              <label class="btn btn-secondary" for="nostrum">Normal</label>
+            
+              <input type="radio" class="btn-check" name="Fragility" id="high" autocomplete="off" />
+              <label class="btn btn-secondary" for="high">High</label>
+            </div>
+          </div>
+        
+          <!-- Message input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form6Example5" style="font-size: 15px;">Mode of transport</label><br>
+            <div class="btn-group">
+              <input type="radio" class="btn-check" name="MOT" id="roadway" autocomplete="off"  />
+              <label class="btn btn-secondary" for="roadway">Roadway</label>
+            
+              <input type="radio" class="btn-check" name="MOT" id="airway" autocomplete="off" checked />
+              <label class="btn btn-secondary" for="airway">Airway</label>
+            
+              <input type="radio" class="btn-check" name="MOT" id="waterway" autocomplete="off" />
+              <label class="btn btn-secondary" for="waterway">Waterway</label>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <h2 class="h2-mktg text-gradient-blue-purple mx-auto col-7-max text-md-center mb-4 mb-lg-6 mt-lg-8 pb-1">
     A new way to make price predictions.
